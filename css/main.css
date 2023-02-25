@@ -10,7 +10,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica;
@@ -20,7 +19,6 @@ body {
 
 header{
     z-index: 5;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,13 +42,11 @@ header{
 main{
     flex-grow: 1;
     background-color: #1a1b1ccf;
-    
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
-    min-height: 500px;
+    min-height: 400px;
     margin: 2rem;
     padding: 2rem;
     box-shadow: 2px 2px 8px var(--shadow-color);
@@ -83,16 +79,11 @@ main{
         width: 100%;
     }
     header{
-
         width: 100%;
     }
 
     main{
         margin: 0.7rem;
         padding: 0.7rem;
-        
-        
     }
-    
-    
 }
