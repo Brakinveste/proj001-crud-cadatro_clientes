@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/ani_back.css">
+
+    <title>CRUD</title>
+</head>
+<body>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+    
+    <header>
+        <h1 class="header-title"> Cadastro de clientes </h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarCliente" > Cadastrar Cliente</button>
+        <table id="tableClient" class="records">
+            <thead>
+                <tr class="records_title">
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Ação</th>
+                </tr>
+            </thead> 
+            <tbody class="txt_body">
+             
+            </tbody>
+        </table>
+        <div class="modal" id="modal" >
+            <div class="modal-content">
+                <header class="modal-header" >
+                    <h2 id="editTitle" >Cliente</h2>
+                    <span class="modal-close" id="modalClose" >&#10006;</span>
+                </header>
+                <form id="form"  class="modal-form">
+                    <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do cliente" required>
+                    <input type="email" id="email" class="modal-field" placeholder="E-mail do cliente" required>
+                    <input type="text" id="fone" class="modal-field" placeholder="Celular do cliente" maxlength="15" onkeyup="handlePhone(event)" required>
+                    <input type="text" id="cidade" class="modal-field" placeholder="Cidade do cliente"  required >
+                </form>
+                <footer class="modal-btn">
+                    <button id="salvar" class="button green" >Salvar</button>
+                    <button id="cancelar" class="button blue" >Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer class="assinatura">
+        Criado por Bruno Ferreira
+    </footer>
+   
+
+    <script src="main.js" defer></script>
+</body>
+</html>
